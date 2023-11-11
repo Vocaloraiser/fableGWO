@@ -19,7 +19,7 @@ jobs:
           deno-version: v1.x
       - run: deno fmt --check
 
-  lint:
+  lint: 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
