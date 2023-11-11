@@ -57,5 +57,5 @@ jobs:
           submodules: recursive
       - uses: denoland/deployctl@v1
         with:
-          project: ${{ Vocaloraiser }}
+          project: ${{ gwo }}
           entrypoint: src/interactions.ts
