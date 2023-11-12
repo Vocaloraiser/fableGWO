@@ -40,9 +40,6 @@ import type { AniListMedia } from '../packs/anilist/types.ts';
 
 import type { Pack } from '../db/schema.ts';
 
-const anilistManifest = _anilistManifest as Manifest;
-const vtubersManifest = _vtubersManifest as Manifest;
-
 type AnilistSearchOptions = {
   page: number;
   perPage: number;
