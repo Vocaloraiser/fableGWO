@@ -1,3 +1,13 @@
+import _anilistManifest from '../packs/anilist/manifest.json' assert {
+  type: 'json',
+};
+
+import _vtubersManifest from '../packs/vtubers/manifest.json' assert {
+  type: 'json',
+};
+
+import * as _anilist from '../packs/anilist/index.ts';
+
 import * as discord from './discord.ts';
 
 import user from './user.ts';
@@ -63,9 +73,7 @@ const packs = {
 async function all(
   { guildId, filter }: { guildId?: string; filter?: boolean },
 ): Promise<(Pack[])> {
-  const builtins: Pack[] = [
-    { manifest: anilistManifest, _id: '_' },
-    { manifest: vtubersManifest, _id: '_' },
+ const builtins: Pack[] = [
   ];
 
   if (!guildId || !config.communityPacks) {
