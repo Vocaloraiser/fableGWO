@@ -1,13 +1,3 @@
-import _anilistManifest from '../packs/anilist/manifest.json' assert {
-  type: 'json',
-};
-
-import _vtubersManifest from '../packs/vtubers/manifest.json' assert {
-  type: 'json',
-};
-
-import * as _anilist from '../packs/anilist/index.ts';
-
 import * as discord from './discord.ts';
 
 import user from './user.ts';
